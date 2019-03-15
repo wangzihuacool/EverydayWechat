@@ -6,13 +6,13 @@ alarm_timed: '06:00'
 girlfriend_infos:
   -
     #女友微信昵称
-    wechat_name: 'hc'
+    wechat_name: 'hh'
     #女友所在桂林
     city_name: '东莞'
     # 从那天开始勾搭的
     start_date: '2008-09-01'
     # 短句的最后留言
-    sweet_words: '来自最爱你的wl_lw。'
+    sweet_words: '来自最爱你的老公。'
 
   #如果有你多个人需要发送，则参照这个样式，复制即可
   #-
