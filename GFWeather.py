@@ -113,7 +113,7 @@ class gfweather:
         # 每天9：30左右给女朋友发送每日一句
         scheduler.add_job(self.start_today_info, 'cron', hour=self.alarm_hour, minute=self.alarm_minute)
         # 每隔2分钟发送一条数据用于测试。
-        # scheduler.add_job(self.start_today_info, 'interval', seconds=120)
+        #scheduler.add_job(self.start_today_info, 'interval', seconds=120)
         scheduler.start()
 
 
@@ -174,7 +174,8 @@ class gfweather:
             today_weather = weatherJson.get('data').get('forecast')[1]
 
             # 今日日期
-            locale.setlocale(locale.LC_CTYPE, 'chinese')
+            #locale.setlocale(locale.LC_CTYPE, 'chinese')
+            locale.setlocale(locale.LC_CTYPE, 'zh_CN.UTF-8')
             today_time = datetime.now().strftime('%Y年%m月%d日 %H:%M:%S')
 
             # 今日天气注意事项
